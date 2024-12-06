@@ -27,17 +27,17 @@ export default async function sitemap (): Promise<MetadataRoute.Sitemap> {
       priority: 1.0 // Alta prioridad para la página principal
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/contacto`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/nosotros`,
       lastModified: new Date(),
       priority: 0.5
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/promociones`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/servicios`,
       lastModified: new Date(),
       priority: 0.7
     },
     {
-      url: `${process.env.NEXT_PUBLIC_BASE_URL}/collections`,
+      url: `${process.env.NEXT_PUBLIC_BASE_URL}/contacto`,
       lastModified: new Date(),
       priority: 0.7
     }

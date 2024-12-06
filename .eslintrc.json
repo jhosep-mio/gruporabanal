@@ -1,21 +1,24 @@
 {
-    "env": {
-      "browser": true,
-      "es2021": true,
-      "node": true
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true
+  },
+  "extends": ["next/core-web-vitals", "plugin:react/recommended", "standard", "next/typescript"],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "tsx": true
     },
-    "extends": ["next/core-web-vitals", "plugin:react/recommended", "standard", ""next/typescript""],
-    "parserOptions": {
-      "ecmaFeatures": {
-        "tsx": true
-      },
-      "ecmaVersion": "latest",
-      "sourceType": "module"
-    },
-    "plugins": ["react"],
-    "rules": {
-      "react/react-in-jsx-scope": "off",
-      "eqeqeq": "off",
-      "multiline-ternary": "off"
-    }
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "plugins": ["react"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "eqeqeq": "off",
+    "multiline-ternary": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@next/next/no-img-element": "off"
   }
+}
